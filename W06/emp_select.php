@@ -15,7 +15,6 @@
         $emp_info .= '<td><a href="emp_delete.php?emp_no='.$row['emp_no'].'">delete</a></td>';
         $emp_info .= '</tr>';
     }
-    
 ?>
 
 

@@ -1,24 +1,6 @@
 <?php
     $link = mysqli_connect("localhost", "admin", "admin", "employees");
-    
-    if ($_POST['gender'] != "") {
-
-        $filtered = array(
-            'search_count' => mysqli_real_escape_string($link, $_POST['search_count']),
-            'order' => mysqli_real_escape_string($link, $_POST['order']),
-            'gender' => mysqli_real_escape_string($link, $_POST['gender'])
-        );
-
-        $query = "SELECT * FROM employees WHERE gender = '{$filtered['gender']}' ORDER BY emp_no {$filtered['order']} limit {$filtered['search_count']}";
-    } else {
-        $filtered = array(
-            'search_count' => mysqli_real_escape_string($link, $_POST['search_count']),
-            'order' => mysqli_real_escape_string($link, $_POST['order'])
-        );
-
-        $query = "SELECT * FROM employees ORDER BY emp_no {$filtered['order']} limit {$filtered['search_count']}";
-    }
-
+    $query = "SELECT * FROM employees ORDER BY emp_no DESC limit 10";
     $result = mysqli_query($link, $query);
     $emp_info = '';
     while($row = mysqli_fetch_array($result)) {
@@ -34,6 +16,8 @@
         $emp_info .= '</tr>';
     }
 ?>
+
+
 
 <!DOCTIYPE html>
     <html>
