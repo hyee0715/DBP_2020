@@ -12,7 +12,7 @@
   while ($row = mysqli_fetch_array($result)) {
 	 echo '<h3>'."The "; 
 	 echo $row['name'];
- 	 echo ' is ';
+ 	 echo ' is '; 
 	 echo $row['color'].'</h3>';
   }
 ?>
