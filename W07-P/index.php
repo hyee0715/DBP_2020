@@ -25,7 +25,7 @@
         <input type="submit" value="Search">
     </form>
     <form action="manager_info.php" method="GET">
-        (5) 매니저 정보 조회:
+        (6) 매니저 정보 조회:
         <input type="text" name="number" placeholder="조회할 매니저 인원 수">
         <input type="submit" value="Search">
     </form>
