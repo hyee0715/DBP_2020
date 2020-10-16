@@ -1,4 +1,4 @@
-<?php 
+<?php
   $link = mysqli_connect('localhost', 'admin', 'admin', 'employees');
   $query = "SELECT * FROM employees ORDER BY emp_no DESC LIMIT 10";
   $result = mysqli_query($link, $query);  
