@@ -1,4 +1,4 @@
-<?php
+<?php 
 $link = mysqli_connect('localhost', 'admin', 'admin', 'employees');
 $filtered = array(
     'emp_no' => mysqli_real_escape_string($link, $_POST['emp_no']),

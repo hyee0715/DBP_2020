@@ -1,4 +1,4 @@
-<?php
+<?php 
     $link = mysqli_connect('localhost', 'admin', 'admin', 'employees');
     
     if(isset($_GET['emp_no'])){
