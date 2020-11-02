@@ -52,7 +52,8 @@
       (속성 : userID - 이용 고객 번호, smoker - 흡연 여부, drink_level - 음주 선호도, transport - 이용 교통 수단, budget - 예산, birth_year - 생년, )
 
 # 발견한 정보 3개 소개
-  #### 메인 화면<br>
+  * 메인 화면<br>
+  ---------------
     - 가장 처음에 나타나는 메인화면이다.
 
     <img width="960" alt="index" src="https://user-images.githubusercontent.com/59169881/97833566-0201ea80-1d19-11eb-8169-692f3ff65b96.PNG">
