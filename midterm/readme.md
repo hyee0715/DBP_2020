@@ -53,9 +53,8 @@
 
 # 발견한 정보 3개 소개
   * **메인 화면**<br>
-    - 가장 처음에 나타나는 메인화면이다.
-
-    <img width="960" alt="index" src="https://user-images.githubusercontent.com/59169881/97833566-0201ea80-1d19-11eb-8169-692f3ff65b96.PNG">
+    - 가장 처음에 나타나는 메인화면이다.<br>
+    <img width="960" alt="index" src="https://user-images.githubusercontent.com/59169881/97833566-0201ea80-1d19-11eb-8169-692f3ff65b96.PNG"><br>
 
 
   * **레스토랑 정보**<br>
@@ -81,9 +80,8 @@
     ORDER BY res_location.placeID;
     ```
 
-    - 출력된 화면은 다음과 같다.
-
-    <img width="960" alt="레스토랑 정보" src="https://user-images.githubusercontent.com/59169881/97833690-48efe000-1d19-11eb-8456-fa5843fa6924.PNG">
+    - 출력된 화면은 다음과 같다.<br>
+    <img width="960" alt="레스토랑 정보" src="https://user-images.githubusercontent.com/59169881/97833690-48efe000-1d19-11eb-8456-fa5843fa6924.PNG"><br>
 
 
 
@@ -107,9 +105,8 @@
     ON rating_final.userID = user_cuisine.userID;
     ```
 
-    - 출력된 화면은 다음과 같다.
-
-    <img width="960" alt="고객 평가" src="https://user-images.githubusercontent.com/59169881/97833716-5dcc7380-1d19-11eb-9ec6-fd338b1d300b.PNG">
+    - 출력된 화면은 다음과 같다.<br>
+    <img width="960" alt="고객 평가" src="https://user-images.githubusercontent.com/59169881/97833716-5dcc7380-1d19-11eb-9ec6-fd338b1d300b.PNG"><br>
 
 
   * **레스토랑 이용 고객 정보**<br>
@@ -136,9 +133,8 @@
     ON res_location.placeID = res_cuisine.placeID;
     ```
 
-    - 출력된 화면은 다음과 같다.
-
-    <img width="960" alt="이용 고객 정보" src="https://user-images.githubusercontent.com/59169881/97833728-68870880-1d19-11eb-8d53-73359bc1d34e.PNG">
+    - 출력된 화면은 다음과 같다.<br>
+    <img width="960" alt="이용 고객 정보" src="https://user-images.githubusercontent.com/59169881/97833728-68870880-1d19-11eb-8d53-73359bc1d34e.PNG"><br>
 
 
 # 동작 화면 소개 영상
