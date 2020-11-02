@@ -87,7 +87,7 @@
 
     * 추가적으로 주 요리분야 / 총 평가 등급 옵션 중에 원하는 속성을 골라 분류해서 레스토랑별 고객 평가 결과를 조회할 수 있고, 원하는 레스토랑의 평과 결과를 검색해볼 수도 있다.
 
-    * 사용된 쿼리문은 다음과 같다.
+    * 사용된 쿼리문은 다음과 같다.<br>
 
     ```sql
     SELECT rating_final.placeID, res_location.name, res_cuisine.Rcuisine, 
