@@ -52,16 +52,16 @@
       (속성 : userID - 이용 고객 번호, smoker - 흡연 여부, drink_level - 음주 선호도, transport - 이용 교통 수단, budget - 예산, birth_year - 생년, )
 
 # 발견한 정보 3개 소개
-  0. 메인 화면<br>
-    * 가장 처음에 나타나는 메인화면이다.
+  * 메인 화면<br>
+    - 가장 처음에 나타나는 메인화면이다.
 
 
-  1. 레스토랑 정보<br>
-    * res_payment, res_cuisine, res_hours, res_parking, res_location 테이블을 모두 조인하여 레스토랑 번호, 레스토랑 이름, 주 요리 분야, 영업 요일, 영업 시간, 가능한 결제 수단, 주소, 주차, 주류, 흡연구역, 가격대, 분위기를 출력하였다.
+  * 레스토랑 정보<br>
+    - res_payment, res_cuisine, res_hours, res_parking, res_location 테이블을 모두 조인하여 레스토랑 번호, 레스토랑 이름, 주 요리 분야, 영업 요일, 영업 시간, 가능한 결제 수단, 주소, 주차, 주류, 흡연구역, 가격대, 분위기를 출력하였다.
 
-    * 추가적으로 주 요리분야 / 가격대 / 주류 옵션 중에 원하는 속성을 골라 분류해서 레스토랑 정보를 조회할 수 있고, 레스토랑을 검색해볼 수도 있다.
+    - 추가적으로 주 요리분야 / 가격대 / 주류 옵션 중에 원하는 속성을 골라 분류해서 레스토랑 정보를 조회할 수 있고, 레스토랑을 검색해볼 수도 있다.
 
-    * 사용된 쿼리문은 다음과 같다.
+    - 사용된 쿼리문은 다음과 같다.
 
     ```sql
     SELECT res_payment.placeID, res_location.name, res_cuisine.Rcuisine, res_hours.days, 
@@ -79,15 +79,15 @@
     ORDER BY res_location.placeID;
     ```
 
-    * 출력된 화면은 다음과 같다.
+    - 출력된 화면은 다음과 같다.
 
 
-  2. 레스토랑 고객 평가 결과<br>
-    * rating_final, res_location, res_cuisine, user_cuisine 테이블을 모두 조인하여 레스토랑 번호, 레스토랑 이름, 주 요리 분야, 총 평가 등급, 음식 평가 등급, 서비스 평가 등급, 이용 고객 번호, 이용 고객 음식 취향을 출력하였다.
+  * 레스토랑 고객 평가 결과<br>
+    - rating_final, res_location, res_cuisine, user_cuisine 테이블을 모두 조인하여 레스토랑 번호, 레스토랑 이름, 주 요리 분야, 총 평가 등급, 음식 평가 등급, 서비스 평가 등급, 이용 고객 번호, 이용 고객 음식 취향을 출력하였다.
 
-    * 추가적으로 주 요리분야 / 총 평가 등급 옵션 중에 원하는 속성을 골라 분류해서 레스토랑별 고객 평가 결과를 조회할 수 있고, 원하는 레스토랑의 평과 결과를 검색해볼 수도 있다.
+    - 추가적으로 주 요리분야 / 총 평가 등급 옵션 중에 원하는 속성을 골라 분류해서 레스토랑별 고객 평가 결과를 조회할 수 있고, 원하는 레스토랑의 평과 결과를 검색해볼 수도 있다.
 
-    * 사용된 쿼리문은 다음과 같다.<br>
+    - 사용된 쿼리문은 다음과 같다.<br>
 
     ```sql
     SELECT rating_final.placeID, res_location.name, res_cuisine.Rcuisine, 
@@ -102,15 +102,15 @@
     ON rating_final.userID = user_cuisine.userID;
     ```
 
-    * 출력된 화면은 다음과 같다.
+    - 출력된 화면은 다음과 같다.
 
 
-  3. 레스토랑 이용 고객 정보<br>
-    * user_profile, user_cuisine, user_payment, res_location, res_cuisine 테이블을 모두 조인하여 고객 번호, 고객 음식 취향, 이용한 결제 수단, 흡연 여부, 음주 선호도, 이용 교통 수단, 예산, 생년, 방문한 가게 이름, 방문한 가게의 주 요리 분야를 출력하였다.
+  * 레스토랑 이용 고객 정보<br>
+    - user_profile, user_cuisine, user_payment, res_location, res_cuisine 테이블을 모두 조인하여 고객 번호, 고객 음식 취향, 이용한 결제 수단, 흡연 여부, 음주 선호도, 이용 교통 수단, 예산, 생년, 방문한 가게 이름, 방문한 가게의 주 요리 분야를 출력하였다.
 
-    * 추가적으로 고객 음식 취향 / 음주 선호도 / 이용 교통 수단 옵션 중에 원하는 속성을 골라 분류해서 고객의 정보를 조회할 수 있고, 고객의 번호로 검색해볼 수도 있다.
+    - 추가적으로 고객 음식 취향 / 음주 선호도 / 이용 교통 수단 옵션 중에 원하는 속성을 골라 분류해서 고객의 정보를 조회할 수 있고, 고객의 번호로 검색해볼 수도 있다.
 
-    * 사용된 쿼리문은 다음과 같다.
+    - 사용된 쿼리문은 다음과 같다.
 
     ```sql
     SELECT user_profile.userID, user_cuisine.Ucuisine, user_payment.Upayment, 
@@ -129,7 +129,7 @@
     ON res_location.placeID = res_cuisine.placeID;
     ```
 
-    * 출력된 화면은 다음과 같다.
+    - 출력된 화면은 다음과 같다.
 
 
 # 동작 화면 소개 영상
