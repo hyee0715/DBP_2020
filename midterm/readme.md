@@ -22,34 +22,34 @@
 
 # 사용한 테이블과 속성
   * 레스토랑 정보 관련 테이블
-    + res_cuisine : 레스토랑의 주 요리 분야를 나타내는 테이블<br>
+    + res_cuisine : 레스토랑의 주 요리 분야를 나타내는 테이블
       (속성 : placeID - 레스토랑 번호, Rcuisine - 주 요리 분야) 
 
-    + res_hours : 레스토랑의 영업 시간과 영업 요일을 나타내는 테이블<br>
+    + res_hours : 레스토랑의 영업 시간과 영업 요일을 나타내는 테이블
       (속성 : placeID - 레스토랑 번호, hours - 영업 시간, days - 영업 요일)
 
-    + res_location : 레스토랑의 위치와 주소를 비롯한 부수적인 정보를 나타내는 테이블<br>
+    + res_location : 레스토랑의 위치와 주소를 비롯한 부수적인 정보를 나타내는 테이블
       (속성 : placeID - 레스토랑 번호, name - 레스토랑 이름, address - 레스토랑 주소, alcohol - 주류, smoking-area - 흡연구역, price - 가격대, Rambience - 분위기)
 
-    + res_parking : 레스토랑의 주차 가능 여부를 나타내는 테이블<br>
+    + res_parking : 레스토랑의 주차 가능 여부를 나타내는 테이블
       (속성 : placeID - 레스토랑 번호, parking_lot - 주차)
 
-    + res_payment : 레스토랑에서 가능한 결제 수단을 나타내는 테이블<br>
+    + res_payment : 레스토랑에서 가능한 결제 수단을 나타내는 테이블
       (속성 : placeID - 레스토랑 번호, Rpayment - 가능한 결제 수단)
 
   * 레스토랑 고객 평가 결과 관련 테이블
-    + rating_final : 레스토랑에 따른 고객의 평가 결과를 나타내는 테이블<br>
+    + rating_final : 레스토랑에 따른 고객의 평가 결과를 나타내는 테이블
       (속성 : userID - 이용 고객 번호,  placeID - 레스토랑 번호, rating - 총 평가등급, food-rating - 음식 평가 등급, service_rating - 서비스 평가 등급)
 
   * 레스토랑 이용 고객 관련 테이블
-    + user_cuisine : 고객의 음식 취향을 나타내는 테이블<br>
+    + user_cuisine : 고객의 음식 취향을 나타내는 테이블
       (속성 : userID - 이용 고객 번호, Ucuisine - 고객 음식 취향)
 
-    + user_payment : 고객이 이용한 결제 수단을 나타내는 테이블<br>
+    + user_payment : 고객이 이용한 결제 수단을 나타내는 테이블
       (속성 :  userID - 이용 고객 번호, Upayment - 이용한 결제 수단)
 
-    + user_profile : 고객의 종합적인 정보를 나타내는 테이블<br>
-      (속성 : userID - 이용 고객 번호, smoker - 흡연 여부, drink_level - 음주 선호도, transport - 이용 교통 수단, budget - 예산, birth_year - 생년, )
+    + user_profile : 고객의 종합적인 정보를 나타내는 테이블
+      (속성 : userID - 이용 고객 번호, smoker - 흡연 여부, drink_level - 음주 선호도, transport - 이용 교통 수단, budget - 예산, birth_year - 생년)
 
 # 발견한 정보 3개 소개
   * **메인 화면**<br>
