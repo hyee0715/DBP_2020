@@ -2,7 +2,7 @@
 
 
 ## 테스트 동영상 링크
-https://youtu.be/LK27zgqgOiA
+https://youtu.be/M2rfwY9eyUE
 
 
 ## 1. 새로 배운 내용
