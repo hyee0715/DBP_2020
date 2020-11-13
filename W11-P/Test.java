@@ -49,7 +49,7 @@ public class Test {
 		Connection conn = null;
 		PreparedStatement psmt = null;
 		ResultSet rs = null;
-		String sql = "select * from (select * from departments order by department_id DESC) where rownum = 1";
+		String sql = "select * from (select * from departments order by department_id desc) where rownum = 1";
 		
 		try {
 			conn = this.getConnection();
