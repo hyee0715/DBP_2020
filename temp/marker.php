@@ -16,7 +16,7 @@
     <title>부동산 지도</title>
 </head>
 <body>
-    <h2><a href="index_a.php">돌아가기</a></h2>
+    <h2><a href="index.php">돌아가기</a></h2>
     
     <!-- 지도 크기 설정 -->
     <div id="map" style="width:800px; height:600px;"></div>

@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <h2><a href="index_a.php">돌아가기</a> | 아파트 임시 정보</h2>
+    <h2><a href="index.php">돌아가기</a> | 아파트 임시 정보</h2>
     <table border="1">
         <tr>
             <th>거래금액</th>
