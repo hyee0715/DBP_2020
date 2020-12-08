@@ -1,5 +1,5 @@
 <?php 
-//마커하나만
+//마커 한 개 출력
     $link = mysqli_connect('localhost', 'admin', 'admin', 'aptinfo');
 
     $filtered_id = array(
